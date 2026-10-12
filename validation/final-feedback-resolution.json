@@ -1,0 +1,11 @@
+{
+  "artwork_sha256": "334ae380ab35db419d103a4b209cc878e57f614395baab0476e35aa639174403",
+  "bytes": 2031046,
+  "ear_feedback": "Regenerated both coherent look rows with physical head rotation and ear attachment.",
+  "accepted_intermediate_warnings": [
+    "157.5 horizontal cue is ambiguous standalone but correct in ordered context",
+    "337.5 horizontal cue is subtle standalone but correct in ordered context"
+  ],
+  "contextual_report": "qa/near-vertical-context-review.json",
+  "blind_report": "qa/blind-validation-v3.json"
+}

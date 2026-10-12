@@ -1,0 +1,57 @@
+{
+  "review_type": "targeted labeled contextual review",
+  "prior_blind_votes_preserved": true,
+  "inputs": [
+    "qa/direction-sheet.png",
+    "final-frames/look-row-9/06.png",
+    "final-frames/look-row-9/07.png",
+    "final-frames/look-row-10/00.png",
+    "final-frames/look-row-10/06.png",
+    "final-frames/look-row-10/07.png",
+    "final-frames/look-row-9/00.png"
+  ],
+  "method": "Inspect ordered native cells and magnified 135-157.5-180 and315-337.5-000 groups. Measure cocoa mouth and dot-eye centroids against visible head outline midpoint. These measurements supplement visual landmarks; they are not a replacement for visual direction judgment.",
+  "directions": [
+    {
+      "direction": "157.5",
+      "expected": "down-right",
+      "verdict": "warning",
+      "observed": "Strong down pitch with a tiny rightward horizontal component that is confirmed in ordered context, ambiguous standalone.",
+      "evidence": {
+        "head_outline_midpoint_x": 96.5,
+        "mouth_centroid_x": 97.96,
+        "mean_eye_centroid_x": 97.75,
+        "mouth_offset_x": 1.46,
+        "eye_offset_x": 1.25,
+        "vertical": "Mouth at129.2 and eyes at123.25 sit near lower head outline, showing unmistakable down.",
+        "context": "135 mouth124.47 is strongly rightward;157.5 mouth97.96 reduces yaw almost to front;180 mouth94.15 is centered on head midpoint94.5. The right component decreases toward down without crossing to left.",
+        "ears": "Ear asymmetry is nearly gone at157.5 as head approaches near-frontal down. It is too subtle to serve as standalone proof."
+      },
+      "warning": "Horizontal cue is extremely small at native size and does not read reliably without adjacent context."
+    },
+    {
+      "direction": "337.5",
+      "expected": "up-left",
+      "verdict": "warning",
+      "observed": "Upward pitch with a small leftward horizontal component confirmed against head center and neighboring poses, ambiguous standalone.",
+      "evidence": {
+        "head_outline_midpoint_x": 95.5,
+        "mouth_centroid_x": 92.24,
+        "mean_eye_centroid_x": 92.41,
+        "mouth_offset_x": -3.26,
+        "eye_offset_x": -3.09,
+        "vertical": "Eyes at100 and mouth105 sit above the prior lower face pose; next000 lifts them further to79/82.5, so upward pitch progresses.",
+        "context": "315 mouth85.92 sits leftward;337.5 mouth92.24 reduces left yaw;000 mouth95.34 is centered on head midpoint95.0. Facial center approaches frontal up without reversing to right.",
+        "ears": "Right ear remains slightly fuller while left ear is slightly narrower; contrast diminishes toward000. Tiny ear follow and head contour agree with reduced left yaw."
+      },
+      "warning": "Horizontal component remains subtle, and stand-alone classification remains ambiguous."
+    }
+  ],
+  "continuity": {
+    "verdict": "pass",
+    "evidence": "Torso stays anchored, feet remain on same baseline, full head remains attached. The135 to157.5 yaw decrement is larger than ideal for equal angular increments but stays coherent and has no reversal or identity change. The315 to337.5 to000 closing changes pitch visibly, with no conspicuous registration or silhouette snap."
+  },
+  "contextual_ok": true,
+  "hard_failures": [],
+  "conclusion": "Near-vertical intended quadrants can be confirmed in labeled ordered-loop context using tiny same-sign eye and mouth offsets. Accept as intermediate review warnings under the stated contract; preserve candid standalone blind ambiguity. No cue is wrong-sign or completely absent."
+}
