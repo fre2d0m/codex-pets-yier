@@ -1,6 +1,6 @@
 # Yier 🐻
 
-以小白熊表情包为参考制作的动画宠物，适用于支持 Pets 插件的 ChatGPT Work 环境。
+以一二表情包为参考制作的动画宠物，适用于支持 Pets 插件的 ChatGPT Work 环境。
 
 ![Yier 转头预览](previews/yier-look-loop.gif)
 
